@@ -1,3 +1,4 @@
+---
 - name: run playbook
   hosts: all
   becomes: yes
@@ -8,3 +9,4 @@
       apt:
        name: "{{package}}"
        state: latest
+...       

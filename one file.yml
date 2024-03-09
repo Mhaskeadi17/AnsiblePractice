@@ -1,0 +1,10 @@
+- name: run playbook
+  hosts: all
+  becomes: yes
+  vars:
+    package: nginx
+  tasks: 
+    - name: nginx install in all machine
+      apt:
+       name: "{{package}}"
+       state: latest

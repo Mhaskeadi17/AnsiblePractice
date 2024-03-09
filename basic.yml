@@ -1,0 +1,15 @@
+- name: running application if ansible file
+  hosts: all
+  vars_files: basic.yml
+  tasks:
+    - name: working on the variable from file script
+      debug:
+        msg: "{{URL}}" 
+    - name: working on first script
+      debug: 
+        msg: "{{URL}}"
+      vars:
+        string: "this is local variables"
+      debug:
+        msg: "{{string}}"
+        

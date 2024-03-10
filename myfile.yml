@@ -1,0 +1,13 @@
+- name: variable with package
+  hosts: all 
+  become: true
+  tasks:
+    - name: trying to create user
+      user:
+        name: "{{item}}"
+        state: present
+      with_item:
+          - superman
+          - padman
+          - spiderman
+...

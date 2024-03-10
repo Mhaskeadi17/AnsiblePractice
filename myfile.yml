@@ -1,3 +1,4 @@
+---
 - name: variable with package
   hosts: all 
   become: true

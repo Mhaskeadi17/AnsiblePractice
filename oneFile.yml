@@ -7,6 +7,12 @@
   tasks: 
     - name: nginx install in all machine
       apt:
+<<<<<<< HEAD
         name: "{{package}}"
         state: latest
 ...       
+=======
+       name: "{{package}}"
+       state: latest
+...       
+>>>>>>> 3921d8b48734bfed2eeabf0b6a1fda4aa7ea9242

@@ -1,0 +1,9 @@
+---
+- name: gather fact of example 
+  hosts: all 
+  become: true
+  gather_facts: yes
+  tasks: 
+    - name: first try gather fact
+      debug: 
+        msg: this is first trail

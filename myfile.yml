@@ -7,7 +7,7 @@
       user:
         name: "{{item}}"
         state: present
-      with_item:
+      with_items:
           - superman
           - padman
           - spiderman
